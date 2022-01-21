@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+body{
+  margin: 0;
+  font-family: 'Poppins';
+}
+.screen{
+  display: flex;
+  
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.logoText{
+  text-align: center;
+}
+.logoText span{
+  font-size: 50px;
+}
+.center{
+  text-align: center;
+}
+.desc{
+  font-size: 30px;
+}
+.logo{
+width: 50%;
+color: white;
+}
+.chatbot {
+  width: 50%;
+  font-family: 'Poppins';
+  border-radius: 10px;
+  box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.15);
+  background: #f5f8fb;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  width: 500px;
+  overflow: hidden;
+}
+
+.suggestionBox{
+  display: inline-block;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #cdcdcd; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #888; 
+}
+
+/* CSS */
+.Suggestions {
+  margin: 5px;
+  align-items: center;
+  background-color: #f50057;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+
+.Suggestions:hover,
+.Suggestions:focus { 
+  background-color: #fcb045;
+  color: #ffffff;
+}
+
+.Suggestions:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, .7);
+}
+
+.Suggestions:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
+
+.header {
+  
+  padding: 20px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  max-height: 58px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #002f50;
+}
+
+.messages {
+  width: 100%;
+  height: 400px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px;
+}
+
+
+.message-container {
+  width: 100%;
+}
+
+.myimg{
+  width: 80%;
+}
+.myimg img{
+  width: 100%;
+}
+
+.bot-message {
+  text-align: left;
+  float: left;
+  padding: 15px 20px;
+  margin: 5px;
+  border-radius: 20px 20px 20px 1px;
+  background: rgba(131,58,180,1); 
+  color: white;
+  min-width: 40px;
+}
+
+.user-message {
+  float: right;
+  padding: 15px 10px;
+  margin: 10px;
+  border-radius: 20px 20px 1px 20px;
+  background: #cccccc;
+  color: black;
+}
+
+.input {
+  position: relative;
+}
+
+.input > form > input[type="text"] {
+  font-family: monospace;
+  font-size: 16px;
+  border: 0;
+  border-radius: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top: 1px solid #eee;
+  box-shadow: none;
+  box-sizing: border-box;
+  opacity: 1;
+  outline: none;
+  padding: 16px 52px 16px 10px;
+  width: 100%;
+  -webkit-appearance: none;
+}
+
+.input > form > input:focus {
+  outline: none;
+}
+
+.input > form > button {
+  background-color: transparent;
+  border: 0;
+  border-bottom-right-radius: 10px;
+  box-shadow: none;
+  cursor: pointer;
+  fill: #4a4a4a;
+  opacity: 1;
+  outline: none;
+  padding: 14px 16px 12px 16px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+@media ( max-width:400px) {
+  .screen{
+    flex-direction: column;
+  }
+
+  .myimg{
+    display: none;
+  }
+}
+body{
+  font-family: 'Poppins';
+}
